@@ -38,8 +38,12 @@ export class UserService {
     return await this.userRep.find();
   }
 
-  async findOne(id: number) {
-    return await this.userRep.findOneBy({ id: id });
+  async findOne(id: number) { 
+    const user= await this.userRep.findOneBy({id});
+    if (!user) {
+      throw new NotFoundException(`User with id ${id} not found`);
+    }
+    return user ;
   }
 
   async findEmail(email: string) {
