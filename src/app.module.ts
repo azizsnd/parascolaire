@@ -31,7 +31,8 @@ import { RolesGuard } from './common/guards/roles.guard';
       password: process.env.DB_PASSWORD,
       database: process.env.DB_DATABASE,
       autoLoadEntities: true,
-      synchronize: true,
+      //synchronize: true,
+      timezone: 'Z',
     }),
   ],
   controllers: [AppController],
@@ -45,4 +46,4 @@ import { RolesGuard } from './common/guards/roles.guard';
     },
   ],
 })
-export class AppModule { }
+export class AppModule {}
