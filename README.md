@@ -10,9 +10,7 @@ Ce dépôt contient la partie backend de l'application **Parascolaire**, dévelo
 - **Gestion des événements** : demande, validation et suivi.
 
 ## Points forts :
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+
 - **NestJS** : Framework backend moderne et modulaire.
 - **MySQL** : Une base de données relationnelle robuste.
 - **TypeORM** : Pour interagir avec la base de données.
